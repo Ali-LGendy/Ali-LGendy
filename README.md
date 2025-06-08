@@ -109,9 +109,7 @@ I’m a passionate **Software Engineer** who loves turning complex challenges in
 <!-- Use GitHub Actions + RSS-Widget to auto-update -->
 <details>
   <summary>Click to expand</summary>
-  
-  <!-- Replace with your RSS Feed URL -->
-  <img src="https://github.com/Ali-LGendy/Ali-LGendy/raw/output/blog-card.svg" alt="Blog Posts" />
+  <img src="./output/blog-card.svg" alt="Blog Posts" width="500" />
 </details>
 
 
