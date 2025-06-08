@@ -79,7 +79,7 @@ I’m a passionate **Software Engineer** who loves turning complex challenges in
       </td>
       <td align="center">
         <a href="https://github.com/Ali-LGendy/DBMS_Project">
-          <img src="[https://media.licdn.com/dms/image/v2/D5612AQF61hQFRvf3eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1711015646667?e=2147483647&v=beta&t=3rSbI0-DXatTmN_CAcFEJToYwXM99Drjz-0hyHF5wNs](https://miro.medium.com/v2/resize:fit:1400/1*szBsfY6lp8A0jb1zOvJ0mw.jpeg)" alt="DBMS Project" width="200px" height="120px" />
+          <img src="https://assets.datamation.com/uploads/2023/06/dm-top-database-challenges.png" alt="DBMS Project" width="200px" height="120px" />
           <br />
           <strong>DBMS Project</strong>
         </a>
