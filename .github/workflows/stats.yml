@@ -1,0 +1,32 @@
+# .github/workflows/stats.yml
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'    # everyday at midnight UTC
+  workflow_dispatch:      # trigger manually if needed
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Readme Stats
+        uses: anuraghazra/github-readme-stats@v4
+        with:
+          username: ${{ github.repository_owner }}
+          theme: dark
+          include_all_commits: true
+          count_private: true
+          output: stats.svg
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mv stats.svg path/to/your/readme/images/
+          git add .
+          git commit -m "chore: update stats" || echo "No changes to commit"
+          git push

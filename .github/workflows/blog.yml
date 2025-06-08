@@ -1,0 +1,31 @@
+# .github/workflows/blog.yml
+name: Update Blog Posts
+
+on:
+  schedule:
+    - cron: '0 1 * * *'    # everyday at 01:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate RSS widget
+        uses: joseluisq/github-readme-rss@v1
+        with:
+          repo: ${{ github.repository_owner }}/${{ github.repository }}
+          feed_url: https://yourblog.com/rss  # replace with your RSS feed
+          card_width: 500
+          card_height: 200
+          output: output/blog-card.svg
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/blog-card.svg
+          git commit -m "chore: update blog widget" || echo "No changes"
+          git push
