@@ -13,7 +13,7 @@
 
 I’m a passionate **Software Engineer** who loves turning complex challenges into elegant, working solutions. Whether it’s architecting scalable backends, crafting interactive frontends, or optimizing databases, I thrive on making things just work.
 
-- 🌱 Currently leveling up with **NestJS** & **Django REST**
+- 🌱 Currently leveling up with **NestJS** & **NextJS**
 - 💬 Ask me about **algorithms**, **Design Patterns**, or **Software Engineering**
 - 🎯 Always on the hunt for the next big challenge
 
